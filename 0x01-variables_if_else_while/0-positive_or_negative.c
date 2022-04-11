@@ -1,35 +1,43 @@
-#!/bin/bash
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+
 /**
- * main - entry point
+ *main - Entry point
  *
- * betty style doc for function main goes there
- * betty there there is a decription added for main
- * Return: 0
+ *Return:[D[D[D[D[D[D[D Return:[A[A[D[D[D[D[D[D[D[D main - Entry point[B[B[D[D[D[D[D[D[D[D[D[D[D Always 0 (Success/correct)
  */
+
 int main(void)
 {
-        int n;
+int n;
 
-        srand(time(0));
-        n = rand() - RAND_MAX / 2;
-        /* your code goes there */
-        if (n > 0)
-        {
-                /* is the value of n positive ? */
-                printf("%d is positive\n", n);
-        }
-        else if (n == 0)
-        {
-                /* is the value of n equal to zero */
-                printf("%d is zero\n", n);
-        }
-        else if (n < 0)
-        {
-                /* is the value of n less than zero ? */
-                printf("%d is negative\n", n);
-        }
-        return (0); /* This is a description for return value of  main */
+n = rand() - RAND_MAX / 2;[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D
+[A
+[A[A[A[C[C[C[C[C[C
+
+
+[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+
+[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csrand (time(0));
+n = rand() - RAND_MAX / 2;
+
+if (n==0)
+{
+printf("%i is zero\n, n);
+}
+
+else if (n<0)
+{
+printf("%i is negative\n", n);
+}
+
+else
+{
+printf("%i is positive\n", n);
+}
+
+return (0);
+
 }
