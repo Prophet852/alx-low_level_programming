@@ -1,19 +1,14 @@
-#include <stdlib.h>                                                                                                
-#include <time.h>                                                                                                  
-#include <stdio.h>                                                                                                 
-                                                                                                                   
-/**                                                                                                                
- * main - Entry point                                                                                              
- *                                                                                                                 
- * Printing ngative or positive numbers                                                                            
- *                                                                                                                 
- * Return: Always 0 (Success)                                                                                      
+#include <stdlib.h>                                                                                            #include <time.h>                                                                                              #include <stdio.h>                                                                                                 
+/**                                                                                                       
+ * main - Entry point       
+ *                                                                                                             
+ * Printing negative or positive numbers
+ *
+ * Return: Always 0 (Success)                                                                                  
  */                                                                                                                
-int main(void)                                                                                                     
+int main(void)                                                                                                 
 {                                                                                                                  
-                                                                                                                   
-int n;                                                                                                             
-                                                                                                                   
+int n;                                                                                                                  
 srand(time(0));                                                                                                    
 n = rand() - RAND_MAX / 2;                                                                                         
 if (n > 5)                                                                                                         
