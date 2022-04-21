@@ -1,22 +1,34 @@
 #include "main.h"
 
 /**
-  * _strcpy - Copy a string
-  * @dest: Destination value
-  * @src: Source value
+  * rev_string - Reverses a string
+  * @s: The string to be modified
   *
-  * Return: the pointer to dest
+  * Return: void
   */
-char *_strcpy(char *dest, char *src)
+void rev_string(char *s)
 {
-	int i;
+	int i, c, k;
+	char *a, aux;
 
-	for (i = 0; src[i] != '\0'; i++)
+	a = s;
+
+	while (s[c] != '\0')
 	{
-		dest[i] = src[i];
+		c++;
 	}
 
-	dest[i++] = '\0';
+	for (k = 1; k < c; k++)
+	{
+		a++;
+	}
 
-	return (dest);
+	for (i = 0; i < (c / 2); i++)
+	{
+		aux = s[i];
+		s[i] = *a;
+		*a = aux;
+		a--;
+	}
 }
+
