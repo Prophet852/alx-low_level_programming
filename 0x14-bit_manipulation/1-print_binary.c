@@ -3,11 +3,11 @@
 #include "main.h"
 
 /**
- *   * print_binary - Prints the binary representation of a number
- *     * @n: The number to representing in binary
- *       *
- *         * Return: Nothing
- *           */
+ * print_binary - Prints the binary representation of a number
+ * @n: The number to representing in binary
+ *
+ * Return: Nothing
+ */
 void print_binary(unsigned long int n)
 {
 	if (n == 0)
@@ -16,15 +16,15 @@ void print_binary(unsigned long int n)
 		return;
 	}
 
- 	_divide(n);
+	_divide(n);
 }
 
 /**
- *   * _divide - ...
- *     * @n: ...
- *       *
- *         * Return: ...
- *           */
+ * _divide - ...
+ *  @n: ...
+ *  Return: ...
+ *
+ */
 void _divide(unsigned long int n)
 {
 	if (n < 1)
