@@ -35,7 +35,8 @@ void copy_file(const char *src, const char *dest)
 	ofd = open(src, O_RDONLY);
 	if (!src || ofd == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", src);												exit(98);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", src);
+		exit(98);
 	}
 
 	tfd = open(dest, O_CREAT | O_WRONLY | O_TRUNC, 0664);
@@ -44,7 +45,7 @@ void copy_file(const char *src, const char *dest)
 		if (write(tfd, buff, readed) != readed || tfd == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", dest);
-																						exit(99);
+			exit(99);
 		}
 	}
 
